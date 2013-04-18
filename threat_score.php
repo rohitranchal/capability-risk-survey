@@ -51,72 +51,43 @@ $caps = $threat_cap[$threat];
 		</td>
 		<td>
 			<select name="<?=$value?>_et">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+				<option value="2">Requires 1 year</option>
+				<option value="4">Requires 1 month</option>
+				<option value="6">requires 1 day</option>
+				<option value="8">requires few minutes</option>
 			</select>
 		</td>
 		<td>
 			<select name="<?=$value?>_se">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+				<option value="1">Multiple Experts</option>
+				<option value="3">Expert</option>
+				<option value="6">Professional</option>
+				<option value="8">Layman</option>
 			</select>
 		</td>
 		<td>
 			<select name="<?=$value?>_ks">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+				<option value="2">Deep nowledge is required</option>
+				<option value="4">Generic knowledge is required</option>
+				<option value="8">No knowledge is required</option>
+				
 			</select>
 		</td>
 		<td>
 			<select name="<?=$value?>_wo">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+				<option value="2">One Second</option>
+				<option value="2">One Day</option>
+				<option value="4">One Month</option>
+				<option value="6">One Year</option>
+				<option value="8">Unlimited</option>
 			</select>
 		</td>
 		<td>
 			<select name="<?=$value?>_re">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+				<option value="0">Not Available</option>
+				<option value="2">Only for Experts</option>
+				<option value="4">Expensive-e.g., 10 000</option>
+				<option value="8">Cheap equipment or script available on the internet</option>
 			</select>
 		</td>
 		</tr>
@@ -126,13 +97,4 @@ $caps = $threat_cap[$threat];
 	
 </table>
 <input type="submit" value="Next"/>
-
-<hr/>
-<h2>Guide for ratings:</h2>
-<p><strong>Specialist expertise</strong>: Layman (8), professional (6), expert (3) multiple experts (1)</p>
-<p><strong>Required equipment and tools (e.g., equipment, script)</strong>: (0) not available, only for experts (2), expensive--e.g., 10 000 (4), cheap equipment or script available on the internet (8)</p>
-<p><strong>Knowledge of the system</strong>: Deep knowledge is required (2), generic knowledge is required (4), no knowledge is required (8)</p>
-<p><strong>Elapsed time</strong>: requires  1 year: (2), requires 1 month(4), requires 1 day (6), requires few minutes (8)</p>
-<p><strong>Window of opportunity</strong>: unlimited (8), (6) one year, (4) one month, (2) one day, (1) one second. (The scale could be translated to number of attempts if required)</p>
-
 </form>

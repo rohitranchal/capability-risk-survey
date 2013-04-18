@@ -13,6 +13,9 @@ if(isset($_SESSION['cap_id'])) {
 	mysqli_query($con, "INSERT INTO Session(id) VALUES ('$id')");
 }
 
+//$ip=$_SERVER['REMOTE_ADDR'];
+//print $ip;
+
 ?>
 <html>
 <head>
