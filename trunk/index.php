@@ -9,12 +9,12 @@ if(isset($_SESSION['cap_id'])) {
 	//Create session
 	$id = uniqid();
 	$_SESSION['cap_id'] = $id;
-	$con = mysqli_connect("localhost","root","testing","cap_risk");
-	mysqli_query($con, "INSERT INTO Session(id) VALUES ('$id')");
-}
 
-//$ip=$_SERVER['REMOTE_ADDR'];
-//print $ip;
+	$ip=$_SERVER['REMOTE_ADDR'];
+
+	$con = mysqli_connect("localhost","root","testing","cap_risk");
+	mysqli_query($con, "INSERT INTO Session(id, ip) VALUES ('$id', '$ip')");
+}
 
 ?>
 <html>
