@@ -1,0 +1,30 @@
+Instruction to setup the application in your local machine
+------------------------------------------------------------------------------
+
+Prerequisits:
+- Apache web server
+- Mysql
+- PHP
+
+The webserver must be configured to be able to process php and php has 
+access to mysql functions.
+
+Please follow the following steps:
+
+1.) Create an empty database in your local mysql server called cap_risk.
+2.) Use the db.sql to create the tables.
+
+3.)
+Update the instances where the user/password is used in mysqli_connect() in the 
+following files: (Yes ... I will move it to one place later :P)
+- index.php
+- process.php
+- tables.php
+
+4.) Copy all .php files into a directory in the web root of the web server.
+
+5.) Restart the web server if not started.
+
+THAT'S IT!!!
+Enjoy :-)
+
