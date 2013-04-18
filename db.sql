@@ -1,6 +1,7 @@
 DROP TABLE Session;
 CREATE TABLE Session (
 	id VARCHAR(255),
+	ip VARCHAR(100),
 	time TIMESTAMP DEFAULT NOW()
 );
 
