@@ -126,4 +126,13 @@ $caps = $threat_cap[$threat];
 	
 </table>
 <input type="submit" value="Next"/>
+
+<hr/>
+<h2>Guide for ratings:</h2>
+<p><strong>Specialist expertise</strong>: Layman (8), professional (6), expert (3) multiple experts (1)</p>
+<p><strong>Required equipment and tools (e.g., equipment, script)</strong>: (0) not available, only for experts (2), expensive--e.g., 10 000 (4), cheap equipment or script available on the internet (8)</p>
+<p><strong>Knowledge of the system</strong>: Deep knowledge is required (2), generic knowledge is required (4), no knowledge is required (8)</p>
+<p><strong>Elapsed time</strong>: requires  1 year: (2), requires 1 month(4), requires 1 day (6), requires few minutes (8)</p>
+<p><strong>Window of opportunity</strong>: unlimited (8), (6) one year, (4) one month, (2) one day, (1) one second. (The scale could be translated to number of attempts if required)</p>
+
 </form>

@@ -27,5 +27,3 @@ CREATE TABLE Threat_Rank (
 	re INT
 );
 
-
-
