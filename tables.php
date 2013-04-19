@@ -45,6 +45,21 @@
 		<tr><td><?=$row[0]?></td><td><?=$row[1]?></td><td><?=$row[2]?></td><td><?=$row[3]?></td><td><?=$row[4]?></td><td><?=$row[5]?></td><td><?=$row[6]?></td><td><?=$row[7]?></td></tr>
 		<?
 	}
+
+
+	$sql = "SELECT * FROM Threat";
+	$res = mysqli_query($con, $sql);
+	?>
+	</table>
+	<h1>Threat</h1>
+	<table border="1">
+		<tr><th>session_id</th><th>threat</th><th>et</th><th>se</th><th>ks</th><th>wo</th><th>re</th></tr>
+	<?
+	while ($row = mysqli_fetch_array($res)) {
+		?>
+		<tr><td><?=$row[0]?></td><td><?=$row[1]?></td><td><?=$row[2]?></td><td><?=$row[3]?></td><td><?=$row[4]?></td><td><?=$row[5]?></td><td><?=$row[6]?></td></tr>
+		<?
+	}
 ?>
 </table>
 </body>
