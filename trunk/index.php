@@ -41,8 +41,10 @@ In the following link, we describe a list of sample capabilities that an attacke
 
 In the following link, we describe threats to the VC system. An attacker needs certain capabilities to perform a threat. We list attacker capabilites related to each threat and request survey takers to select scores for given attributes that describe the chance that attackers get the required capabilities, opportunity and means to exercise the threat.
 <br/>
-<a href="threat_score.php?threat=0">Enter Threat Likelihood Scores</a>
+<a href="threat_score.php?threat=0">Enter Threat-Capability Likelihood Scores</a>
 </p>
+
+<a href="threats.php">Enter Threat Likelihood Scores</a>
 
 </body>
 </html>

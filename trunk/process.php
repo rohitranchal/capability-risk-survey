@@ -66,4 +66,24 @@ function process_threat_rank() {
 		header("Location: $url");
 	}	
 }
+
+function process_threats() {
+
+	$session_id =  $_SESSION['cap_id'];
+	$con = mysqli_connect("localhost","root","testing","cap_risk");
+
+	for( $i = 0; $i < 6; $i++) {
+
+		$et = $_POST[$i . "_et"];
+		$se = $_POST[$i . "_se"];
+		$ks = $_POST[$i . "_ks"];
+		$wo = $_POST[$i . "_wo"];
+		$re = $_POST[$i . "_re"];
+
+		$sql = "INSERT INTO Threat VALUES('$session_id', $i, $et, $se, $ks, $wo, $re)";
+		mysqli_query($con, $sql);
+	}
+
+	header("Location: ./index.php");
+}
 ?>

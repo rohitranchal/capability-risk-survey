@@ -28,3 +28,14 @@ CREATE TABLE Threat_Rank (
 	re INT
 );
 
+DROP TABLE Threat;
+CREATE TABLE Threat (
+	session_id VARCHAR(255),
+	threat INT, 
+	et INT,
+	se INT, 
+	ks INT,
+	wo INT,
+	re INT
+);
+
