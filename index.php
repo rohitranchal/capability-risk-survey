@@ -6,14 +6,7 @@ if(isset($_SESSION['cap_id'])) {
 	//Fetch session
 	$id	= $_SESSION['cap_id'];
 } else {
-	//Create session
-	$id = uniqid();
-	$_SESSION['cap_id'] = $id;
-
-	$ip=$_SERVER['REMOTE_ADDR'];
-
-	$con = mysqli_connect("localhost","root","testing","cap_risk");
-	mysqli_query($con, "INSERT INTO Session(id, ip) VALUES ('$id', '$ip')");
+  header("Location: ./pin.html");
 }
 
 ?>
