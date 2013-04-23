@@ -5,6 +5,26 @@ $type = $_POST["type"];
 $fn = "process_" . $type;
 $fn();
 
+function process_pin() {
+
+
+	$pin = $_POST["pin"];
+	
+	if($pin == "2013Cap") {
+		//Create session
+		$id = uniqid();
+		$_SESSION['cap_id'] = $id;
+
+		$ip=$_SERVER['REMOTE_ADDR'];
+
+		$con = mysqli_connect("localhost","root","testing","cap_risk");
+		mysqli_query($con, "INSERT INTO Session(id, ip) VALUES ('$id', '$ip')");
+	}
+
+	header("Location: ./index.php");
+}
+
+
 /**
  * Store capability values
  */
