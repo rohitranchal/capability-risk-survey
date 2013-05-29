@@ -11,7 +11,7 @@ if(isset($_SESSION['cap_id'])) {
 
 ?>
 
-<html xmlns:v="urn:schemas-microsoft-com:vml"
+</html><html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:w="urn:schemas-microsoft-com:office:word"
 xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
@@ -38,7 +38,7 @@ Systems</title>
 <link rel=colorSchemeMapping href="index_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:Zoom>98</w:Zoom>
+  <w:Zoom>FullPage</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
   <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
@@ -524,6 +524,9 @@ span.BalloonTextChar
   mso-fareast-theme-font:minor-fareast;
   mso-hansi-font-family:Tahoma;
   mso-bidi-font-family:Tahoma;}
+span.GramE
+  {mso-style-name:"";
+  mso-gram-e:yes;}
 .MsoChpDefault
   {mso-style-type:export-only;
   mso-default-props:yes;
@@ -707,11 +710,19 @@ href="#People">People</a> | <a href="#Project">Project</a> | <a href="#Survey">S
 
 <div>
 
+<div>
+
+<div>
+
 <div class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>
 
 <hr size=10 width="100%" noshade style='color:navy' align=left>
 
 </span></div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -763,11 +774,19 @@ auto;text-align:right'><a href="#top">top</a></p>
 
 <div>
 
+<div>
+
+<div>
+
 <div class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>
 
 <hr size=10 width="100%" noshade style='color:navy' align=left>
 
 </span></div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -781,21 +800,29 @@ font-weight:normal;mso-bidi-font-weight:bold'>The goal of this survey is to
 collect expert opinions about the likelihood of a set of threats to video
 conferencing systems using two different approaches. You assume that the risk
 estimate is performed at the inception stage of the project; that is, before
-making choices concerning the technologyâ€”e.g., operating system and programming
+making choices concerning the technologyÑe.g., operating system and programming
 language. You consider that there are successful attacks that exercise the
-threats and the attacker is an individual hackerâ€”not expert though. <o:p></o:p></span></h2>
+threats and the attacker is an individual hackerÑnot expert though. <o:p></o:p></span></h2>
 
 <h2 style='margin-left:36.0pt'><span style='font-size:12.0pt;font-family:"Verdana","sans-serif";
 font-weight:normal;mso-bidi-font-weight:bold'>In the following we describe the
 system and the steps of the survey.<o:p></o:p></span></h2>
 
-<h2 style='margin-left:36.0pt;line-height:150%'><span style='font-size:12.0pt;
+<p class=MsoNormal align=right style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:right'><a href="#top">top</a></p>
+
+<!-- <h2 style='margin-left:36.0pt;line-height:150%'><span style='font-size:12.0pt;
 line-height:150%;font-family:"Verdana","sans-serif";font-weight:normal;
 mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></h2>
 
 <h2><span style='mso-fareast-font-family:"Times New Roman"'>
 
+<hr size=10 width="100%" noshade style='color:navy' align=left> -->
+
+<div class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>
+
 <hr size=10 width="100%" noshade style='color:navy' align=left>
+
 
 </span></h2>
 
@@ -827,11 +854,19 @@ auto;text-align:right'><a href="#top">top</a></p>
 
 <div>
 
+<div>
+
+<div>
+
 <div class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>
 
 <hr size=10 width="100%" noshade style='color:navy' align=left>
 
 </span></div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -860,7 +895,7 @@ bold'><span style='mso-list:Ignore'>1-<span style='font:7.0pt "Times New Roman"'
 </span></span></span><![endif]><span style='font-size:12.0pt;font-family:"Verdana","sans-serif";
 font-weight:normal;mso-bidi-font-weight:bold'>Please use the following link to
 provide your opinions about the likelihood of the threats to the system and
-select the scores that you believe appropriate, for the given attributes that
+select the scores that you believe appropriate, for the given factors that
 describe the likelihood of exercising the threat. </span><span
 style='font-size:12.0pt;font-family:"Verdana","sans-serif";font-weight:normal'>Please
 click</span><span style='font-size:12.0pt;font-family:"Verdana","sans-serif";
@@ -872,10 +907,11 @@ style='font-family:"Verdana","sans-serif";mso-fareast-font-family:Verdana;
 mso-bidi-font-family:Verdana'><span style='mso-list:Ignore'>2-<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
 style='font-family:"Verdana","sans-serif"'>Please use the following link to
-provide your opinions about the capabilities () <span style='mso-bidi-font-weight:
-bold'>that an attacker may have or acquire. For each capability, please select
-an option corresponding to the likelihood that an attacker may have or acquire
-that capability. Please click <a href="cap.php">here</a></span><o:p></o:p></span></p>
+provide your opinions about the attacker capabilities (e.g., attacker physical access
+to street camera) <span style='mso-bidi-font-weight:bold'>that an attacker may
+have or acquire. For each capability, please select an option corresponding to
+the likelihood that an attacker may have or acquire that capability. Please
+click <a href="cap.php">here</a></span><o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-top:6.0pt;mso-margin-bottom-alt:
 auto;margin-left:53.85pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo4'><![if !supportLists]><span
@@ -891,22 +927,25 @@ of exercising the threat.</span> Note that in this step, w<span
 style='mso-bidi-font-weight:bold'>e provide the capabilities related to each
 threat and request survey takers to select scores for given attributes.<b> </b>Please
 click</span><b style='mso-bidi-font-weight:normal'> </b><span style='mso-bidi-font-weight:
-bold'><a href="threat_score.php?threat=0"><span style='mso-bidi-font-weight:
-normal'>here</span></a></span><o:p></o:p></span></p>
+bold'><a href="threat_cap.php"><span style='mso-bidi-font-weight:normal'>here</span></a></span><o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-top:6.0pt;mso-margin-bottom-alt:
-auto;margin-left:53.85pt;mso-add-space:auto;text-indent:-17.85pt;mso-list:l0 level1 lfo4'><![if !supportLists]><span
-style='font-family:"Verdana","sans-serif";mso-fareast-font-family:Verdana;
-mso-bidi-font-family:Verdana'><span style='mso-list:Ignore'>4-<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+auto;margin-left:53.85pt;mso-add-space:auto'><span style='font-family:"Verdana","sans-serif";
+mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;mso-margin-bottom-alt:auto'><span
 style='font-family:"Verdana","sans-serif";mso-bidi-font-weight:bold'>We thank
-you for accepting to participate in the survey and provide your expert opinion.<br>
-<br style='mso-special-character:line-break'>
+you for accepting to participate in this survey and provide your expert opinion.<br
+style='mso-special-character:line-break'>
 <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
-<![endif]></span><span style='font-family:"Verdana","sans-serif"'><o:p></o:p></span></p>
+<![endif]></span></p>
 
 <p class=MsoNormal align=right style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;text-align:right'><a href="#top">top</a></p>
+
+<div>
+
+<div>
 
 <div>
 
@@ -917,6 +956,10 @@ auto;text-align:right'><a href="#top">top</a></p>
 <hr size=10 width="100%" noshade style='color:navy' align=left>
 
 </span></div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -931,11 +974,19 @@ takers.&nbsp; <o:p></o:p></span></p>
 
 <div>
 
+<div>
+
+<div>
+
 <div class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>
 
 <hr size=10 width="100%" noshade style='color:navy' align=left>
 
 </span></div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -949,4 +1000,3 @@ href="mailto:bb-survey@cs.purdue.edu">bb-survey@cs.purdue.edu</a><o:p></o:p></sp
 
 </body>
 
-</html>
