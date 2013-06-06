@@ -28,6 +28,9 @@ $caps = $threat_cap[$threat];
 
 ?>
 
+<h1 align="center"><strong>Assessment of Likelihood of  Success of Exercising Threats</strong></h1>
+<p>&nbsp;</p>
+<p>For each threat, please select  the level required of each factor to perform a successful attack assuming the  attacker has the specified capability. Notice that this is the initial risk  assessment for a system to build, you may consider the system does not have  security controls yet (Safeguards, features, and mechanisms that protect a system  from specific threats.). </p>
 <h1><?=$threat_labels[$threat]?></h1>
 
 <form action="process.php" method="post">
