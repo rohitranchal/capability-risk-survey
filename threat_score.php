@@ -22,21 +22,21 @@ $threat_cap = array(
 	3 => array(2,3,5),
 	4 => array(2,3,4,5),
 	5 => array(3,5));
-
-//Get the list of caps
-$caps = $threat_cap[$threat];
-
 ?>
 
 <h1 align="center"><strong>Assessment of Likelihood of  Success of Exercising Threats</strong></h1>
 <p>&nbsp;</p>
 <p>For each threat, please select  the level required of each factor to perform a successful attack assuming the  attacker has the specified capability. Notice that this is the initial risk  assessment for a system to build, you may consider the system does not have  security controls yet (Safeguards, features, and mechanisms that protect a system  from specific threats.). </p>
-<h1><?=$threat_labels[$threat]?></h1>
+
 
 <form action="process.php" method="post">
-<input type="hidden" name="threat" value="<?=$threat?>"/>
 <input type="hidden" name="type" value="threat_rank"/>
 <table>
+	<?
+	foreach ($threat_cap as $threat => $caps) {
+		
+	?>
+	<tr><td colspan="6"><h1><?=$threat_labels[$threat]?></h1></td></tr>
 	<tr>
 		<th>Capability</th>
 		<th>Elapsed time</th>
@@ -53,7 +53,7 @@ $caps = $threat_cap[$threat];
 		<td><?=$caps_defs[$value]?>
 		</td>
 		<td>
-			<select name="<?=$value?>_et">
+			<select name="<?=$threat?>_<?=$value?>_et">
 				<option value="2">Requires 1 year</option>
 				<option value="4">Requires 1 month</option>
 				<option value="6">requires 1 day</option>
@@ -61,7 +61,7 @@ $caps = $threat_cap[$threat];
 			</select>
 		</td>
 		<td>
-			<select name="<?=$value?>_se">
+			<select name="<?=$threat?>_<?=$value?>_se">
 				<option value="1">Multiple Experts</option>
 				<option value="3">Expert</option>
 				<option value="6">Professional</option>
@@ -69,7 +69,7 @@ $caps = $threat_cap[$threat];
 			</select>
 		</td>
 		<td>
-			<select name="<?=$value?>_ks">
+			<select name="<?=$threat?>_<?=$value?>_ks">
 				<option value="2">Deep nowledge is required</option>
 				<option value="4">Generic knowledge is required</option>
 				<option value="8">No knowledge is required</option>
@@ -77,7 +77,7 @@ $caps = $threat_cap[$threat];
 			</select>
 		</td>
 		<td>
-			<select name="<?=$value?>_wo">
+			<select name="<?=$threat?>_<?=$value?>_wo">
 				<option value="2">One Second</option>
 				<option value="2">One Day</option>
 				<option value="4">One Month</option>
@@ -86,7 +86,7 @@ $caps = $threat_cap[$threat];
 			</select>
 		</td>
 		<td>
-			<select name="<?=$value?>_re">
+			<select name="<?=$threat?>_<?=$value?>_re">
 				<option value="0">Not Available</option>
 				<option value="2">Only for Experts</option>
 				<option value="4">Expensive-e.g., 10 000</option>
@@ -96,8 +96,10 @@ $caps = $threat_cap[$threat];
 		</tr>
 		<?
 	}
+	}
 	?>
 	
 </table>
-<input type="submit" value="Next"/>
+<br/>
+<input type="submit" value="Submit"/>
 </form>

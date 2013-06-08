@@ -66,7 +66,7 @@ the threats that the attacker can trigger. The steps ar:</p>
   <li>Please provide your opinion about the capabilities that an attacker may have or acquire. For each capability, please select
     an option corresponding to the likelihood that an attacker may have or acquire
     that capability. Please click <a href="cap.php">here</a>.</li>
-  <li>Please provide your opinion about the likelihood of the threats to the system and select the scores that you believe appropriate, for the given attributes that describe the likelihood of exercising the threat. Note that in this step, we provide the capabilities related to each threat and request survey takers to select scores for given attributes. Please click<a href="threat_score.php?threat=0"> here</a>.</li>
+  <li>Please provide your opinion about the likelihood of the threats to the system and select the scores that you believe appropriate, for the given attributes that describe the likelihood of exercising the threat. Note that in this step, we provide the capabilities related to each threat and request survey takers to select scores for given attributes. Please click<a href="threat_score.php"> here</a>.</li>
 </ol>
 
 <p>
