@@ -60,31 +60,25 @@ function process_threat_rank() {
 		5 => array(3,5));
 
 	$session_id =  $_SESSION['cap_id'];
-	$threat = $_POST['threat'];
-
-	$caps = $threat_cap[$threat];
 	$con = mysqli_connect("localhost","root","testing","cap_risk");
 
-	foreach ($caps as $cap) {
-		$et = $_POST[$cap . "_et"];
-		$se = $_POST[$cap . "_se"];
-		$ks = $_POST[$cap . "_ks"];
-		$wo = $_POST[$cap . "_wo"];
-		$re = $_POST[$cap . "_re"];
+	foreach ($threat_cap as $threat => $caps) {
 
-		$sql = "INSERT INTO Threat_Rank VALUES('$session_id', $threat, $cap, $et, $se, $ks, $wo, $re)";
-		mysqli_query($con, $sql);
+		foreach ($caps as $cap) {
+			$et = $_POST[$threat . "_" . $cap . "_et"];
+			$se = $_POST[$threat . "_" . $cap . "_se"];
+			$ks = $_POST[$threat . "_" . $cap . "_ks"];
+			$wo = $_POST[$threat . "_" . $cap . "_wo"];
+			$re = $_POST[$threat . "_" . $cap . "_re"];
+
+			$sql = "INSERT INTO Threat_Rank VALUES('$session_id', $threat, $cap, $et, $se, $ks, $wo, $re)";
+			mysqli_query($con, $sql);
+		}
 	}
 
-	if($threat < 5) {
-		$threat++;
-		$url = "./threat_score.php?threat=" . $threat;
-		header("Location: $url");
-		exit(0);
-	} else {
-		$url .= "./index.php";
-		header("Location: $url");
-	}	
+	$url .= "./index.php";
+	header("Location: $url");
+
 }
 
 function process_threats() {
