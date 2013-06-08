@@ -30,12 +30,12 @@ function process_pin() {
  */
 function process_capabilities() {
 
-	$c1 = $_POST["c1"];
-	$c2 = $_POST["c2"];
-	$c3 = $_POST["c3"];
-	$c4 = $_POST["c4"];
-	$c5 = $_POST["c5"];
-	$c6 = $_POST["c6"];
+	$c1 = isset($_POST["c1"]) ? $_POST["c1"] : -1;
+	$c2 = isset($_POST["c2"]) ? $_POST["c2"] : -1;
+	$c3 = isset($_POST["c3"]) ? $_POST["c3"] : -1;
+	$c4 = isset($_POST["c4"]) ? $_POST["c4"] : -1;
+	$c5 = isset($_POST["c5"]) ? $_POST["c5"] : -1;
+	$c6 = isset($_POST["c6"]) ? $_POST["c6"] : -1;
 
 	$session_id =  $_SESSION['cap_id'];
 
