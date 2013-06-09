@@ -14,6 +14,7 @@ Systems</title>
 <pre>Estimation of the Likelihood  of Attackers Capabilities</pre>
 
 <p>Please use this form to provide your scores for the  likelihood that a potential attacker to VC system has the specified  capabilities. An attacker capability is the ability to use appropriate means  (e.g., skills, knowledge, time, expertise, and tools) and opportunity (e.g.,  enough time to perform the attack) required to exploit a specific weakness of  the system in order to exercise a specific threat. For example, an attacker  cannot copy files stored in a smart phone if he/she does not have physical or  remote access capabilities to the phone. </p>
+<p>For each capability, please select an option corresponding to the  likelihood that an attacker may have or acquire that capability.</p>
 <p>
   <input type="hidden" name="type" value="capabilities"/>
 </p>
