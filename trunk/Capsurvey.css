@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+pre{
+	text-align: center;
+	color: #F0F;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	}
+	
+	h2{
+	text-align: start;
+	color: #93C;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: medium;
+		}
+	
+	p{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+		}
+	li{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+		
+		}
+		
+form{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	}
+	
+	table{
+			font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	}
