@@ -22,8 +22,7 @@ $threat_cap = array(
 	3 => array(2,3,5),
 	4 => array(2,3,4,5),
 	5 => array(3,5));
-?>
-<head>
+?><head>
 <title>Capability-based Security Risk Estimation and Mitigation for Information
 Systems</title>
 
@@ -31,9 +30,12 @@ Systems</title>
 </head>
 
 
+
 <pre>Assessment of Likelihood of  Success of Exercising Threats</pre>
 
-<p>For each threat, please select  the level required of each factor to perform a successful attack assuming the  attacker has the specified capability. Notice that this is the initial risk  assessment for a system to build, you may consider the system does not have  security controls yet (Safeguards, features, and mechanisms that protect a  system from specific threats.). </p>
+<p>For each threat, please select  the level required of each factor to perform a successful attack assuming the  attacker has the specified capability. </p>
+<p>&nbsp;</p>
+<p>Note: The estimate is for the initial risk  assessment for a system to develop, you may consider the system does not have  security controls yet (Safeguards, features, and mechanisms that protect a  system from specific threats). </p>
 <form action="process.php" method="post">
   <input type="hidden" name="type" value="threat_rank"/>
 <table>
