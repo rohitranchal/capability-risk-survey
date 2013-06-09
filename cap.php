@@ -2,26 +2,29 @@
 
 ?>
 
-<html>
 <head>
-	<title>
-		Survey: Capability-based Security Risk Estimation and Mitigation for Information Systems
-	</title>
+<title>Capability-based Security Risk Estimation and Mitigation for Information
+Systems</title>
+
+<link rel="stylesheet" href="Capsurvey.css">
 </head>
+
+
 <body>
-<h1 align="center"><strong>Estimation of the Likelihood  of Attackers Capabilities</strong></h1>
-<p align="center">&nbsp;</p>
-<p>Please use this form to provide  your scores for the likelihood that a potential attacker to VC system has the  specified capabilities. An attacker capability is the ability to use  appropriate means (e.g., skills, knowledge, time, expertise, and tools) and  opportunity (e.g., enough time to perform the attack) required to exploit a  specific weakness of the system in order to exercise a specific threat. For  example, an attacker cannot copy files stored in a smart phone if he/she does  not have physical or remote access capabilities to the phone. </p>
+<pre>Estimation of the Likelihood  of Attackers Capabilities</pre>
 
-<form action="process.php" method="post">
+<p>Please use this form to provide your scores for the  likelihood that a potential attacker to VC system has the specified  capabilities. An attacker capability is the ability to use appropriate means  (e.g., skills, knowledge, time, expertise, and tools) and opportunity (e.g.,  enough time to perform the attack) required to exploit a specific weakness of  the system in order to exercise a specific threat. For example, an attacker  cannot copy files stored in a smart phone if he/she does not have physical or  remote access capabilities to the phone. </p>
+<p>
   <input type="hidden" name="type" value="capabilities"/>
-
+</p>
+<form action="process.php" method="post">
 <table width="1026" cellpadding="10">
 	<tr><th>Capability</th><th colspan="6">Rating</th></tr>
         
 	<tr>
-		<td><label for="c1_0" width="34%">Impossible</label></td>
-		<td><label for="c1_1">Very Unlikely</label></td>
+		<td><label for="c1_00" width="34%"> </label></td>
+		<td><label for="c1_0">Impossible</label></td>
+        <td><label for="c1_1">Very Unlikely</label></td>
 		<td><label for="c1_2">Likely</label></td>
 		<td><label for="c1_3">Possobly</label></td>
 		<td><label for="c1_4">Highly Likely</label></td>
