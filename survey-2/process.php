@@ -10,14 +10,14 @@ function process_pin() {
 
 	$pin = $_POST["pin"];
 	
-	if($pin == "2013Cap") {
+	if($pin == "2013CapVehi") {
 		//Create session
 		$id = uniqid();
 		$_SESSION['cap_id'] = $id;
 
 		$ip=$_SERVER['REMOTE_ADDR'];
 
-		$con = mysqli_connect("localhost","root","testing","cap_risk");
+		$con = mysqli_connect("localhost","root","testing","cap_risk_2");
 		mysqli_query($con, "INSERT INTO Session(id, ip) VALUES ('$id', '$ip')");
 	}
 
@@ -40,7 +40,7 @@ function process_capabilities() {
 	$session_id =  $_SESSION['cap_id'];
 
 	$sql = "INSERT INTO Capability VALUES('$session_id', $c1, $c2, $c3, $c4, $c5, $c6)";
-	$con = mysqli_connect("localhost","root","testing","cap_risk");
+	$con = mysqli_connect("localhost","root","testing","cap_risk_2");
 	mysqli_query($con, $sql);
 
     header("Location: ./index.php");
@@ -60,7 +60,7 @@ function process_threat_rank() {
 		5 => array(3,5));
 
 	$session_id =  $_SESSION['cap_id'];
-	$con = mysqli_connect("localhost","root","testing","cap_risk");
+	$con = mysqli_connect("localhost","root","testing","cap_risk_2");
 
 	foreach ($threat_cap as $threat => $caps) {
 
@@ -84,7 +84,7 @@ function process_threat_rank() {
 function process_threats() {
 
 	$session_id =  $_SESSION['cap_id'];
-	$con = mysqli_connect("localhost","root","testing","cap_risk");
+	$con = mysqli_connect("localhost","root","testing","cap_risk_2");
 
 	for( $i = 0; $i < 6; $i++) {
 

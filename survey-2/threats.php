@@ -1,11 +1,12 @@
 <?php
 
-$threat_labels = array(0 => "Unauthorized join of meetings",
-	1 => "Unauthorized use of the VC station, e.g., control the movement of the camera",
-	2 => "Unauthorized access to frames exchanged between the VC station and communicating station",
-	3 => "Unauthorized modification of frames sent from the VC to communicating station",
-	4 => "Interrupt the VC station",
-	5 => "Unauthorized change of the behavior of the VC station");
+$threat_labels = array(0 => "Falsification of speedometer reading of the vehicle",
+	1 => "Disruption of the braking system of the vehicle",
+	2 => "Disruption of the emergency response system of the vehicle (e.g., OnStar)",
+	3 => "Generating false check lights in the dashboard on the vehicle",
+	4 => "Locking the gearstick in a fixed position",
+	5 => "Sending deceptive messages to the infotainment system",
+	6 => "Remotely update ﬁrmware of an ECU");
 
 
 

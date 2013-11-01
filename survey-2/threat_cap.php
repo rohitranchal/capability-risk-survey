@@ -1,27 +1,28 @@
 <?php
 $threat = $_GET['threat'];
 
-$threat_labels = array(0 => "Unauthorized join of meetings",
-	1 => "Unauthorized use of the VC station, e.g., control the movement of the camera",
-	2 => "Unauthorized access to frames exchanged between the VC station and communicating station",
-	3 => "Unauthorized modification of frames sent from the VC to communicating station",
-	4 => "Interrupt the VC station",
-	5 => "Unauthorized change of the behavior of the VC station");
+$threat_labels = array(0 => "Falsification of speedometer reading of the vehicle",
+	1 => "Disruption of the braking system of the vehicle",
+	2 => "Disruption of the emergency response system of the vehicle (e.g., OnStar)",
+	3 => "Generating false check lights in the dashboard on the vehicle",
+	4 => "Locking the gearstick in a fixed position",
+	5 => "Sending deceptive messages to the infotainment system",
+	6 => "Remotely update ﬁrmware of an ECU");
 
-$caps_defs = array("The attacker can remotely connect to the VC station",
-	"The attacker can eavesdrop the communication between communicating stations, e.g., through sniffing the network",
-	"The attacker can remove, inject, or modify messages exchanged between communicating stations. This includes sending fabricated commands to the VC station. (C3 includes C2)",
-	"The attacker can remotely access a VC and change installed software, e.g., uses an already installed remote control software",
-	"The attacker has physical access to control the use of the VC, e.g., power it on or off",
-	"The attacker can modify the software installed in the VC station and change its circuits (e.g., maintenance officer)");
+$caps_defs = array(1 => "Attacker can physically access the OBD-II port",
+	2 => "Attacker can physically access the CAN bus (e.g. Connect a new ECU to the CAN bus)",
+	3 => "Attacker can remotely inject messages to CAN bus",
+	4 => "Attacker can spoof external GPS signals",
+	5 => "Attacker can control communication between the vehicle and the Internet");
 
 $threat_cap = array(
-	0 => array(0,3,5),
-	1 =>array(2,3,5),
-	2 => array(1,3,5),
-	3 => array(2,3,5),
-	4 => array(2,3,4,5),
-	5 => array(3,5));
+	0 => array(0,1,2),
+	1 =>array(1,2),
+	2 => array(1,3,4),
+	3 => array(1,2),
+	4 => array(1,2),
+	5 => array(1,3,4),
+	6 => array(2));
 ?><head>
 <title>Capability-based Security Risk Estimation and Mitigation for Information
 Systems</title>
