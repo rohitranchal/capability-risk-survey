@@ -35,11 +35,10 @@ function process_capabilities() {
 	$c3 = isset($_POST["c3"]) ? $_POST["c3"] : -1;
 	$c4 = isset($_POST["c4"]) ? $_POST["c4"] : -1;
 	$c5 = isset($_POST["c5"]) ? $_POST["c5"] : -1;
-	$c6 = isset($_POST["c6"]) ? $_POST["c6"] : -1;
 
 	$session_id =  $_SESSION['cap_id'];
 
-	$sql = "INSERT INTO Capability VALUES('$session_id', $c1, $c2, $c3, $c4, $c5, $c6)";
+	$sql = "INSERT INTO Capability VALUES('$session_id', $c1, $c2, $c3, $c4, $c5)";
 	$con = mysqli_connect("localhost","root","testing","cap_risk_2");
 	mysqli_query($con, $sql);
 
@@ -52,12 +51,13 @@ function process_capabilities() {
 function process_threat_rank() {
 
 	$threat_cap = array(
-		0 => array(0,3,5),
-		1 =>array(2,3,5),
-		2 => array(1,3,5),
-		3 => array(2,3,5),
-		4 => array(2,3,4,5),
-		5 => array(3,5));
+		0 => array(0,1,2),
+		1 =>array(1,2),
+		2 => array(1,3,4),
+		3 => array(1,2),
+		4 => array(1,2),
+		5 => array(1,3,4),
+		6 => array(2));
 
 	$session_id =  $_SESSION['cap_id'];
 	$con = mysqli_connect("localhost","root","testing","cap_risk_2");

@@ -23,7 +23,7 @@
 	</table>
 	<h1>Capability</h1>
 	<table border="1">
-		<tr><th>session_id</th><th>c1</th><th>c2</th><th>c3</th><th>c4</th><th>c5</th><th>c6</th></tr>
+		<tr><th>session_id</th><th>c1</th><th>c2</th><th>c3</th><th>c4</th><th>c5</th></tr>
 	<?
 	while ($row = mysqli_fetch_array($res)) {
 		?>
