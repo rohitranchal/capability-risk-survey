@@ -12,14 +12,12 @@ if(isset($_SESSION['cap_id'])) {
 ?>
 
 <head>
-<title>Capability-based Security Risk Estimation and Mitigation for Information
-Systems</title>
+<title>Capability-based Security Risk Estimation and Mitigation for Information Systems</title>
 
 <link rel="stylesheet" href="Capsurvey.css">
 </head>
 <Body>
-<pre>Capability-based Security Risk Estimation and Mitigation for Information   Systems   
- </pre>
+<pre>Capability-based Security Risk Estimation and Mitigation for Information Systems</pre>
 <h2>Team members</h2>
 <p><a href="http://www.cs.purdue.edu/homes/bb">Prof. Bharat Bhargava</a><br>
   <a href="http://www.win.tue.nl/~lothmane/">Dr. Lotfi Ben Othmane</a><br>
