@@ -31,7 +31,7 @@ Systems</title>
 	</tr>
 
 	<tr>
-		<td>The attacker can remotely connect to the VC station</td>
+		<td>Attacker can physically access the OBD-II port</td>
 		<td><input type="radio" name="c1" value="0" id="c1_0"></td>
 		<td><input type="radio" name="c1" value="1" id="c1_1"></td>
 		<td><input type="radio" name="c1" value="2" id="c1_2"></td>
@@ -42,7 +42,7 @@ Systems</title>
 
 	<tr>
 			
-		<td>The attacker can eavesdrop the communication between communicating stations, e.g., through sniffing the network</td>
+		<td>Attacker can physically access the CAN bus (e.g. Connect a new ECU to the CAN bus)</td>
 		<td><input type="radio" name="c2" value="0" id="c2_0"></td>
 		<td><input type="radio" name="c2" value="1" id="c2_1"></td>
 		<td><input type="radio" name="c2" value="2" id="c2_2"></td>
@@ -52,7 +52,7 @@ Systems</title>
 	</tr>
 
 	<tr>
-		<td>The attacker can remove, inject, or modify messages exchanged between communicating stations. This includes sending fabricated commands to the VC station. (C3 includes C2)</td>
+		<td>Attacker can remotely inject messages to CAN bus</td>
 		<td><input type="radio" name="c3" value="0" id="c3_0"></td>
 		<td><input type="radio" name="c3" value="1" id="c3_1"></td>
 		<td><input type="radio" name="c3" value="2" id="c3_2"></td>
@@ -64,7 +64,7 @@ Systems</title>
 
 
 	<tr>
-		<td>The attacker can remotely access a VC and change installed software, e.g., uses an already installed remote control software</td>
+		<td>Attacker can spoof external GPS signals</td>
 		<td><input type="radio" name="c4" value="0" id="c4_0"></td>
 		<td><input type="radio" name="c4" value="1" id="c4_1"></td>
 		<td><input type="radio" name="c4" value="2" id="c4_2"></td>
@@ -75,7 +75,7 @@ Systems</title>
 
 
 	<tr>
-		<td>The attacker has physical access to control the use of the VC, e.g., power it on or off</td>
+		<td>Attacker can control communication between the vehicle and the Internet</td>
 		<td><input type="radio" name="c5" value="0" id="c5_0"></td>
 		<td><input type="radio" name="c5" value="1" id="c5_1"></td>
 		<td><input type="radio" name="c5" value="2" id="c5_2"></td>
@@ -84,16 +84,7 @@ Systems</title>
 		<td><input type="radio" name="c5" value="5" id="c5_5"></td>
 	</tr>
 	
-	<tr>
-		<td>The attacker can modify the software installed in the VC station and change its circuits (e.g., maintenance officer)</td>
-		<td><input type="radio" name="c6" value="0" id="c6_0"></td>
-		<td><input type="radio" name="c6" value="1" id="c6_1"></td>
-		<td><input type="radio" name="c6" value="2" id="c6_2"></td>
-		<td><input type="radio" name="c6" value="3" id="c6_3"></td>
-		<td><input type="radio" name="c6" value="4" id="c6_4"></td>
-		<td><input type="radio" name="c6" value="5" id="c6_5"></td>
-
-	</tr>
+	
 	</table>
 	<input type="submit" value="submit"/>
 </form>

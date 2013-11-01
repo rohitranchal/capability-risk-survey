@@ -2,7 +2,7 @@
 <body>
 <?php
 
-	$con = mysqli_connect("localhost","root","testing","cap_risk");
+	$con = mysqli_connect("localhost","root","testing","cap_risk_2");
 
 	$sql = "SELECT * FROM Session";
 	$res = mysqli_query($con, $sql);
