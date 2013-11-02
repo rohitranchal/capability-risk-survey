@@ -12,8 +12,7 @@ CREATE TABLE Capability (
 	c2 INT,
 	c3 INT,
 	c4 INT, 
-	c5 INT,
-	c6 INT
+	c5 INT
 );
 
 DROP TABLE Threat_Rank;

@@ -9,11 +9,11 @@ $threat_labels = array(0 => "Falsification of speedometer reading of the vehicle
 	5 => "Sending deceptive messages to the infotainment system",
 	6 => "Remotely update ﬁrmware of an ECU");
 
-$caps_defs = array(1 => "Attacker can physically access the OBD-II port",
-	2 => "Attacker can physically access the CAN bus (e.g. Connect a new ECU to the CAN bus)",
-	3 => "Attacker can remotely inject messages to CAN bus",
-	4 => "Attacker can spoof external GPS signals",
-	5 => "Attacker can control communication between the vehicle and the Internet");
+$caps_defs = array(0 => "Attacker can physically access the OBD-II port",
+	1 => "Attacker can physically access the CAN bus (e.g. Connect a new ECU to the CAN bus)",
+	2 => "Attacker can remotely inject messages to CAN bus",
+	3 => "Attacker can spoof external GPS signals",
+	4 => "Attacker can control communication between the vehicle and the Internet");
 
 $threat_cap = array(
 	0 => array(0,1,2),
