@@ -25,7 +25,7 @@ Systems</title>
 		<td><label for="c1_0">Impossible</label></td>
         <td><label for="c1_1">Very Unlikely</label></td>
 		<td><label for="c1_2">Likely</label></td>
-		<td><label for="c1_3">Possobly</label></td>
+		<td><label for="c1_3">Possibly</label></td>
 		<td><label for="c1_4">Highly Likely</label></td>
 		<td><label for="c1_5">Certain/Sure</label></td>
 	</tr>

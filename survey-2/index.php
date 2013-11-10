@@ -39,7 +39,11 @@ they communicate with neighboring vehicles and Road Side Units (RSUs), personal
 devices, and Service Centers (SCs). The assets of the connected vehicles
 include the occupants of the vehicle, the in-vehicle data and the
 functionalities of the vehicle components. The following video shows possible
-attack scenarios on a vehicle : <a href="http://www.youtube.com/watch?v=0VZgU9ac_QI">Link</a></p>
+attack scenarios on a vehicle:</p>
+
+<div style="width: 50%; margin: 0 auto;">
+<iframe width="420" height="315" src="//www.youtube.com/embed/0VZgU9ac_QI" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <h2>Survey</h2>
 

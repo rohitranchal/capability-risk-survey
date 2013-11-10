@@ -7,7 +7,7 @@ $threat_labels = array(0 => "Falsification of speedometer reading of the vehicle
 	3 => "Generating false check lights in the dashboard on the vehicle",
 	4 => "Locking the gearstick in a fixed position",
 	5 => "Sending deceptive messages to the infotainment system",
-	6 => "Remotely update ﬁrmware of an ECU");
+	6 => "Remotely update an ECU");
 
 $caps_defs = array(0 => "Attacker can physically access the OBD-II port",
 	1 => "Attacker can physically access the CAN bus (e.g. Connect a new ECU to the CAN bus)",
