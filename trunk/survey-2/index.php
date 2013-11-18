@@ -33,15 +33,14 @@ if(isset($_SESSION['cap_id'])) {
 
 <table align="center">
 <tr>
-	<td><img width="600" src="in-Vehicle-ECU-Architecture.png"/></td><td width="50"></td><td><img width="200" src="Remotevehicle.jpeg"/></td>
+	<td><img width="700" src="in-Vehicle-ECU-Architecture.png"/></td><td width="50"></td><td><img width="200" src="Remotevehicle.jpeg"/></td>
+</tr>
+<tr>
+	<td align="center">An example architecture of in-vehicle network.</td><td width="100"></td><td>Remote access to a connected vehicle.</td>
 </tr>
 </table>
 
-
-<table>
-<tr>
-	<td>
-
+<br/>
 <p>Today,
 several applications such as cooperative adaptive cruise control, remote
 firmware update, e-call, and remote diagnostic of vehicles require
@@ -52,10 +51,6 @@ devices, and Service Centers (SCs). The assets of the connected vehicles
 include the occupants of the vehicle, the in-vehicle data and the
 functionalities of the vehicle components. The following video shows possible
 attack scenarios on a vehicle: <a href="http://www.youtube.com/watch?v=0VZgU9ac_QI">(Work of Johan van Uden)</a></p>
-	</td>
-	<td></td>
-</tr>
-</table>
 
 
 <h2>Survey</h2>
