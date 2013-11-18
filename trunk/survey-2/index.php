@@ -29,10 +29,11 @@ if(isset($_SESSION['cap_id'])) {
 <p>The goal of this survey is to collect expert opinions about the likelihood of a set of threats to connected vehicles using two different approaches, which we describe later. You assume that the risk estimate is performed at the inception stage of the project; that is, technology choices, such as operating system and programming language, will be made in a later stage. You also consider that it is possible to trigger all the listed threats and the potential attacker does not need to be an expert. </p>
 <h2>Description of the System</h2>
 
-<table>
+<p>A motor vehicle uses a set of sensors and Electronic Control Units (ECUs) to collect data about the vehicle's behavior and environment, and to control the functionalities of the vehicle. ECUs can collaborate by exchanging messages and form an in-vehicle network (a.k.a. on-Board network). Motor vehicles, until recently, used to have a closed in-vehicle network, i.e. they did not have external connectivity. Messages exchanged between the components of a vehicle were produced and consumed by the nodes of the in-vehicle network.</p>
+
+<table align="center">
 <tr>
-	<td>A motor vehicle uses a set of sensors and Electronic Control Units (ECUs) to collect data about the vehicle's behavior and environment, and to control the functionalities of the vehicle. ECUs can collaborate by exchanging messages and form an in-vehicle network (a.k.a. on-Board network). Motor vehicles, until recently, used to have a closed in-vehicle network, i.e. they did not have external connectivity. Messages exchanged between the components of a vehicle were produced and consumed by the nodes of the in-vehicle network.<td>
-	<td><img width="500" src="in-Vehicle-ECU-Architecture.png"/></td>
+	<td><img width="600" src="in-Vehicle-ECU-Architecture.png"/></td><td width="50"></td><td><img width="200" src="Remotevehicle.jpeg"/></td>
 </tr>
 </table>
 
@@ -52,7 +53,7 @@ include the occupants of the vehicle, the in-vehicle data and the
 functionalities of the vehicle components. The following video shows possible
 attack scenarios on a vehicle: <a href="http://www.youtube.com/watch?v=0VZgU9ac_QI">(Work of Johan van Uden)</a></p>
 	</td>
-	<td><img width="200" src="Remotevehicle.jpeg"/></td>
+	<td></td>
 </tr>
 </table>
 
