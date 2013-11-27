@@ -86,7 +86,8 @@ Systems</title>
 	
 	
 	</table>
-	<input type="submit" value="submit"/>
+	<p>Your perceptions will be saved and you will be transferred to the home page to continue the survey.</p>
+	<input type="submit" value="submit" style="width:100px;font-size:xx-large" />
 </form>
 
 </body>
