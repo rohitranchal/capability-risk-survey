@@ -63,7 +63,7 @@ Systems</title>
 		</td>
 		<td>
 			<select name="<?=$threat?>_ks">
-				<option value="2">Deep nowledge is required</option>
+				<option value="2">Deep knowledge is required</option>
 				<option value="4">Generic knowledge is required</option>
 				<option value="8">No knowledge is required</option>
 				
@@ -92,6 +92,7 @@ Systems</title>
 	?>
 	
 </table>
-<input type="submit" value="Submit"/>
+<p>Your perceptions will be saved and you will be transferred to the home page to continue the survey.</p>
+<input type="submit" value="submit" style="width:100px;font-size:xx-large" />
 </form>
 </body>

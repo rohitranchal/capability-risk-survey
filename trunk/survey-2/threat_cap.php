@@ -109,5 +109,6 @@ Systems</title>
 	
 </table>
 <br/>
-<input type="submit" value="Submit"/>
+<input type="submit" value="submit" style="width:100px;font-size:xx-large" />
+<p>Thank you for your participation.</p>
 </form>
