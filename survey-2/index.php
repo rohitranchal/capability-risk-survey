@@ -36,7 +36,7 @@ if(isset($_SESSION['cap_id'])) {
 	<td><img width="700" src="in-Vehicle-ECU-Architecture.png"/></td><td width="50"></td><td><img width="200" src="Remotevehicle.jpeg"/></td>
 </tr>
 <tr>
-	<td align="center">An example architecture of in-vehicle network.</td><td width="100"></td><td>Remote access to a connected vehicle.</td>
+	<td align="center">An example architecture of in-vehicle network (Work of Marko Wolf).</td><td width="100"></td><td>Remote access to a connected vehicle.</td>
 </tr>
 </table>
 
